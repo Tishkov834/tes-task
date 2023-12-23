@@ -25,6 +25,7 @@ import Header from '@/components/Header';
     min-height: calc(100% - 60px);
     display: flex;
     justify-content: center;
+    overflow-x: hidden;
   }
 }
 

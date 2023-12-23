@@ -69,7 +69,6 @@ defineProps({
   }
 
   .tooltip {
-    //width: 100%;
     cursor: pointer;
   }
 }
