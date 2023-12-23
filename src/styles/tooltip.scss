@@ -38,7 +38,7 @@
 
   &[position^="bottom"]::after {
     top: calc(105% + 8px);
-    left: 100%;
+    left: 50%;
   }
 
   &:not([position]):hover::before,
