@@ -1,5 +1,6 @@
 <script setup>
 import { truncateString } from '@/helpers/truncateString';
+import { formatPhoneNumber } from '@/helpers/formatPhoneNumber';
 
 defineProps({
   photo: String,
@@ -8,7 +9,6 @@ defineProps({
   email: String,
   phone: String,
 });
-
 </script>
 
 <template>
@@ -22,7 +22,7 @@ defineProps({
       <div v-tooltip="email" class="tooltip">
         <p class="user-card-info-text">{{truncateString(email)}}</p>
       </div>
-      <p class="user-card-info-text">{{phone}}</p>
+      <p class="user-card-info-text">{{formatPhoneNumber(phone)}}</p>
     </div>
   </div>
 </template>

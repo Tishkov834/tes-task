@@ -65,21 +65,31 @@ import Button from '@/components/common/Button';
   }
 }
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .info-section {
+    background-position: -1270.215px -412.112px;
+    background-size: 342.315% 164.03%;
+  }
+}
+
 @media screen and (min-width: 361px) and (max-width: 768px) {
   .info-section {
     min-height: 500px;
-    background-position: -762.661px -317.009px;
+    background-position: -952.661px -317.009px;
     background-size: 342.315% 164.03%;
   }
 }
 
 @media screen and (max-width: 360px) {
   .info-section {
+    min-height: 500px;
     background-position: -446.56px -317.009px;
     background-size: 342.315% 164.03%;
+    align-items: start;
 
     &-content {
       width: 328px;
+      margin-top: 40px;
     }
   }
 }

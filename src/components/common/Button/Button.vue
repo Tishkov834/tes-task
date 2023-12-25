@@ -12,13 +12,14 @@
 @import "@/styles/colors";
 
 .button {
-  width: 100px;
+  min-width: 100px;
   height: 34px;
   flex-shrink: 0;
   border: none;
   border-radius: 80px;
   background: $yellow;
   cursor: pointer;
+  padding: 0 18px;
 }
 
 .button:hover {
