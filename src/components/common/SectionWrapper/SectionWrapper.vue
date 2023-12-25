@@ -27,7 +27,7 @@ defineProps({
     font-weight: 400;
     line-height: 40px;
     text-align: center;
-    padding: 0 5px;
+    padding: 0 15px;
   }
 }
 

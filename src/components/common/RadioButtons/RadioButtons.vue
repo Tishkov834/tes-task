@@ -27,6 +27,7 @@ const emits = defineEmits(['update-value']);
   display: flex;
   flex-direction: column;
   gap: 7px;
+  margin: 10px 0 0 0;
 
   .radio {
     display: flex;
@@ -42,8 +43,8 @@ const emits = defineEmits(['update-value']);
           border-radius: 100%;
           border: 1px solid $dark-white;
           display: inline-block;
-          width: 20px;
-          height: 20px;
+          width: 18px;
+          height: 18px;
           position: relative;
           margin-right: 12px;
           vertical-align: top;

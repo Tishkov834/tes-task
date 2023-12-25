@@ -19,12 +19,16 @@ defineProps({
 <template>
   <SectionWrapper title="Working with POST request">
     <form class="form-wrapper">
-      <Input name="name" title="Name" placeholder="Your name" />
-      <Input name="email" title="Email" placeholder="Email" />
-      <Input name="phone" title="Phone" placeholder="Phone" helper-text="+38 (XXX) XXX - XX - XX" v-mask="'+380#########'" />
-      <div class="select-position-wrapper">
-        <h2 class="select-position-wrapper-title">Select your position</h2>
-        <RadioButtons :value="selectedOption" :positions="positions" @update-value="updateSelectedOption" />
+      <div class="form-wrapper-content">
+        <div class="form-wrapper-content-inputs">
+          <Input name="name" title="Name" placeholder="Your name" />
+          <Input name="email" title="Email" placeholder="Email" />
+          <Input name="phone" title="Phone" placeholder="Phone" helper-text="+38 (XXX) XXX - XX - XX" v-mask="'+380#########'" />
+        </div>
+        <div class="select-position-wrapper">
+          <h2 class="select-position-wrapper-title">Select your position</h2>
+          <RadioButtons :value="selectedOption" :positions="positions" @update-value="updateSelectedOption" />
+        </div>
       </div>
       <CustomUpload name="photo" placeholder="Upload your photo" :file-name="fileName" :on-change="handleFileChange"/>
     </form>
@@ -34,10 +38,22 @@ defineProps({
 
 <style scoped lang="scss">
 .form-wrapper {
-  width: 320px;
+  width: 380px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 47px;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+
+    &-inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
 }
 
 .select-position-wrapper {
@@ -47,7 +63,7 @@ defineProps({
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
-    margin: 0 0 11px 0;
+    margin: 0;
   }
 }
 

@@ -43,7 +43,7 @@ const {
 
 .input-wrapper {
   max-height: 54px;
-  padding: 14px 16px;
+  padding: 13px 16px;
   border-radius: 4px;
   border: 1px solid $dark-white;
   background: $light-gray;
